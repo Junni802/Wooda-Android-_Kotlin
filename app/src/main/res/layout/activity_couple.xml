@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CoupleActivity">
+
+    <TextView
+        android:id="@+id/txtCoupleTitle"
+        android:layout_width="131dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="84dp"
+        android:gravity="center"
+        android:text="연인등록하기"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txxCoupleEmail"
+        android:layout_width="264dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="92dp"
+        android:ems="10"
+        android:hint="상대방의 이메일을 입력해 주세요"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/btnEmailChk"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCoupleTitle" />
+
+    <TextView
+        android:id="@+id/txtCoupleChk"
+        android:layout_width="259dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="48dp"
+        android:textColor="#FF5722"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txxCoupleEmail" />
+
+    <Button
+        android:id="@+id/btnCoupleSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="연인 신청"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCoupleChk" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="365dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:text="상대방이 수락해야 연인이 등록되며, 3일간 상대방이 수신하지 않을시 연인등록은 실패하게 됩니다"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="공지사항"
+        android:textColor="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCoupleSend" />
+
+    <Button
+        android:id="@+id/btnEmailChk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="이메일 확인"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txxCoupleEmail"
+        app:layout_constraintTop_toBottomOf="@+id/txtCoupleTitle" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
